@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Objects</title>
-</head>
-<body>
-    <p>Введіть необхідну відстань, щоб розрахувати час необхідний для поїздки, так кількість витраченого палива</p>
-    <input type="number" class="input">
-    <button class="calc">calc</button>
-    <div class="out__time"></div>
-    <div class="out__fuel"></div>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="car">
+        <p>
+          Введіть необхідну відстань, щоб розрахувати час необхідний для
+          поїздки, так кількість витраченого палива
+        </p>
+        <input type="number" class="input" />
+        <button class="calc">calc</button>
+        <div class="outputs">
+          <div class="out__time"></div>
+          <div class="out__fuel"></div>
+        </div>
+      </div>
 
-    <!--set time-->
-    <div class="time__display"></div>
-    <button class="change__seconds">+3 секунди</button>
-    <button class="change__minutes">+3 хвилини</button>
-    <button class="change__hours">+3 години</button>
-    
-
-
+      <!--set time-->
+      <div class="time">
+        <div class="time__display"></div>
+        
+        <button class="change__seconds">+3 секунди</button>
+        <button class="change__minutes">+3 хвилини</button>
+        <button class="change__hours">+3 години</button>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
